@@ -79,10 +79,9 @@ nav {
   z-index: 99;
   width: 100%;
   background: #f5f5f5;
-  
 }
 nav .wrapper {
-  /* position: relative; */
+  position: relative;
   height: 80px;
   line-height: 80px;
   margin: auto;
@@ -116,7 +115,7 @@ nav .wrapper {
   background: #f5f5f5;
   width: 180px;
   line-height: 45px;
-  top: 90px;
+  top: 100px;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -134,6 +133,7 @@ nav .wrapper {
   padding: 0 0 0 15px;
   font-weight: 400;
   border-radius: 0px;
+  font-weight: bold;
 }
 .mega-box {
   position: absolute;
@@ -205,7 +205,7 @@ nav .wrapper {
     max-width: 350px;
     top: 0;
     left: -100%;
-    background: #242526;
+    background: #2f552e;
     display: block;
     padding: 50px 10px;
     line-height: 50px;
@@ -213,15 +213,24 @@ nav .wrapper {
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
   }
+  .wrapper .nav-links li a {
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+  }
+  .wrapper .nav-links li a:hover {
+    color: #79b927;
+    border-bottom: 2px solid #f5f5f5;
+  }
+
   /* custom scroll bar */
   ::-webkit-scrollbar {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #242526;
+    background: #f5f5f5;
   }
   ::-webkit-scrollbar-thumb {
-    background: #3a3b3c;
+    background: #79b927;
   }
   #menu-btn:checked ~ .nav-links {
     left: 0%;
@@ -243,7 +252,8 @@ nav .wrapper {
   .nav-links .drop-menu {
     position: static;
     opacity: 1;
-    top: 65px;
+    top: 100px;
+    background: #79b927;
     visibility: visible;
     padding-left: 20px;
     width: 100%;
@@ -252,6 +262,7 @@ nav .wrapper {
     box-shadow: none;
     transition: all 0.3s ease;
   }
+
   #showDrop:checked ~ .drop-menu,
   #showMega:checked ~ .mega-box {
     max-height: 100%;
@@ -261,7 +272,7 @@ nav .wrapper {
   }
   .nav-links .mobile-item {
     display: block;
-    color: #f2f2f2;
+    color: #f5f5f5;
     font-size: 20px;
     font-weight: 500;
     padding-left: 20px;
@@ -269,16 +280,25 @@ nav .wrapper {
     border-radius: 5px;
     transition: all 0.3s ease;
   }
+
   .nav-links .mobile-item:hover {
-    background: #3a3b3c;
+    color: #79b927;
   }
   .drop-menu li {
     margin: 0;
   }
   .drop-menu li a {
-    border-radius: 5px;
     font-size: 18px;
   }
+  .wrapper .nav-links .drop-menu li a {
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .wrapper .nav-links .drop-menu li a:hover {
+    color: #2f552e;
+  }
+
   .mega-box {
     position: static;
     top: 65px;
