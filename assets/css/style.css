@@ -160,18 +160,23 @@ nav .wrapper {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.mega-box button {
-  outline: none;
-  background: #2f552e;
-  color: #f5f5f5;
-  padding: 10px;
-  border: none;
+.mega-box .prdt-btn {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 15px;
   border-radius: 5px;
+  transition: 0.5s;
+  color: #f8f9fa;
+  border: 1.5px solid #79b927;
+  background: #79b927;
 }
-.mega-box button:hover {
+
+.mega-box .prdt-btn:hover {
   background: #f5f5f5;
   color: #2f552e;
-  border: 2px soild #f5f5f5;
+  border: 2px solid #2f552e;
 }
 .wrapper .btn {
   font-size: 20px;
@@ -433,12 +438,34 @@ a.nivo-control.active {
   margin: 30px 0 0 0;
 }
 
+#aboutus .about-btn {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #f8f9fa;
+  border: 1.5px solid #2f552e;
+  background: #2f552e;
+}
+
+#aboutus .about-btn:hover {
+  background: inherit;
+  color: #2f552e;
+  border: 2px solid #2f552e;
+}
 @media screen and (max-width: 700px) {
   #aboutus .container .header p {
     font-size: 14px;
   }
   #aboutus .container .header h2 {
     font-size: 18px;
+  }
+  #aboutus .container .header h2 span:after {
+    height: 3px;
   }
 }
 
@@ -512,3 +539,82 @@ a.nivo-control.active {
   border-radius: 5px;
   border: 1px solid #79b927;
 }
+
+/* services styles */
+.latest-blog{
+     padding: 70px 0px;
+     background: #f5f5f5;
+}
+ .blog-box{
+     -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+     box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+     background: #ffffff;
+     margin-bottom: 30px;
+}
+ .blog-content{
+     position: relative;
+}
+ .title-blog{
+     padding: 40px 30px 40px 30px;
+}
+ .title-blog h3{
+     font-size: 20px;
+     font-weight: 700;
+     color: #000000;
+}
+ .title-blog p{
+     margin: 0px;
+}
+ .option-blog {
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+	 right: 0px;
+	 margin: 0 auto;
+	 text-align: center;
+}
+ .option-blog li{
+	 display: inline-block;
+ }
+ .option-blog li a{
+     background: #000000;
+     display: inline-block;
+     font-size: 18px;
+     color: #ffffff;
+     width: 34px;
+     height: 34px;
+     text-align: center;
+     line-height: 34px;
+}
+ .option-blog li a:hover{
+     background: #b0b435;
+     color: #ffffff;
+}
+ .tooltip-inner {
+     background-color: #b0b435;
+}
+
+ .tooltip.bs-tooltip-right .arrow:before {
+     border-right-color: #b0b435 !important;
+     padding-top: 0px !important;
+     top: 0px !important;
+}
+ .tooltip.bs-tooltip-left .arrow:before {
+     border-left-color: #b0b435 !important;
+	 padding-top: 0px !important;
+	 padding-right: 5px !important;
+     top: 0px !important;
+}
+ .tooltip.bs-tooltip-bottom .arrow:before {
+     border-right-color: #b0b435 !important;
+}
+ .tooltip.bs-tooltip-top .arrow:before {
+     border-top-color: #b0b435 !important;
+	 padding-top: 0px !important;
+     top: 0px !important;
+}
+
+
+/*  services styles */
+
+
