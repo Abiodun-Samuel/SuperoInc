@@ -1,5 +1,5 @@
 !(function ($) {
-  "use strict";
+  ("use strict");
 
   // nivoSlider for intro section
 
@@ -46,5 +46,44 @@
         loop: true,
       },
     },
+  });
+
+  /* ..............................................
+	   products Special Menu
+	   ................................................. */
+
+  var Container = $(".container");
+  Container.imagesLoaded(function () {
+    var portfolio = $(".special-menu");
+    portfolio.on("click", "button", function () {
+      $(this).addClass("active").siblings().removeClass("active");
+      var filterValue = $(this).attr("data-filter");
+      $grid.isotope({
+        filter: filterValue,
+      });
+    });
+    var $grid = $(".special-list").isotope({
+      itemSelector: ".special-grid",
+    });
+  });
+
+  // back to the top button
+  $(document).ready(function () {
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 100) {
+        $("#back-to-top").fadeIn();
+      } else {
+        $("#back-to-top").fadeOut();
+      }
+    });
+    $("#back-to-top").click(function () {
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        600
+      );
+      return false;
+    });
   });
 })(jQuery);
