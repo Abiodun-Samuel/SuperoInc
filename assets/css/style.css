@@ -543,7 +543,28 @@ a.nivo-control.active {
 }
 
 /* services styles */
+#services .text-center h1 {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+#services .text-center h1 span {
+  color: #2f552e;
+  position: relative;
+}
 
+#services .text-center h1 span:before {
+  content: "";
+  position: absolute;
+  left: 20%;
+  bottom: -10px;
+  height: 5px;
+  width: 50%;
+  background: #79b927;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-bottom: 30px; */
+}
 
 .latest-blog {
   padding: 10px 0px;
