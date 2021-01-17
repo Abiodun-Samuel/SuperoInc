@@ -672,3 +672,6 @@ a.nivo-control.active {
   transform: translateY(-110px) rotateX(90deg);
 }
 /*  services styles */
+.products-box {
+  background: red;
+}
