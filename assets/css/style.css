@@ -849,7 +849,9 @@ a.nivo-control.active {
 }
 
 /* ========== contact section styles ========== */
-
+#contact{
+  background: #ffffff;
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -975,9 +977,9 @@ a.nivo-control.active {
 }
 
 #contact .container .row .contact .form button[type="submit"] {
-  background: #ff4081;
+  background: #2f552e;
   font-weight: bold;
-  border: 2px solid #ff4081;
+  border: 2px solid #2f552e;
   outline: none;
   border-radius: 5px;
   padding: 10px 25px;
