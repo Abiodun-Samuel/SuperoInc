@@ -1,6 +1,5 @@
 !(function ($) {
   ("use strict");
-
   // nivoSlider for intro section
 
   $(".slider-active").nivoSlider({
@@ -48,6 +47,7 @@
     },
   });
 
+ 
   /* ..............................................
 	   products Special Menu
 	   ................................................. */
