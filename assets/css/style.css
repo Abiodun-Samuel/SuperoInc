@@ -163,20 +163,22 @@ nav .wrapper {
 }
 .mega-box {
   position: absolute;
-  left: 25%;
-  width: 75%;
+  left: 0;
+  width: 100%;
   padding: 20px;
   top: 85px;
+  opacity: 0;
+  visibility: hidden;
+
   background: rgba(0, 0, 0, 0.8);
   visibility: hidden;
-  /* text-align: center; */
 }
 .mega-box img {
-  /* margin: 5px; */
   max-width: 15%;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin: 20px;
 }
 .mega-box img:hover {
   background: #79b927;
@@ -184,21 +186,20 @@ nav .wrapper {
 
 .mega-box .prdt-btn {
   font-size: 15px;
-  font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
   transition: 0.5s;
   color: #f8f9fa;
-  border: 1.5px solid #79b927;
+  border: none;
+  outline: none;
   background: #79b927;
 }
 
 .mega-box .prdt-btn:hover {
   background: #f5f5f5;
   color: #2f552e;
-  border: 2px solid #2f552e;
 }
 .wrapper .btn {
   font-size: 20px;
@@ -319,8 +320,8 @@ nav .wrapper {
   .wrapper .nav-links .drop-menu li a:hover {
     color: #2f552e;
   }
-
   .mega-box {
+    background: inherit;
     position: static;
     top: 65px;
     opacity: 1;
@@ -329,21 +330,14 @@ nav .wrapper {
     max-height: 0px;
     overflow: hidden;
     transition: all 0.3s ease;
-    overflow-y: scroll;
   }
-  .mega-box a {
-    display: inline;
-  }
-
   /* product list */
   .mega-box img {
     margin: 10px;
-    max-width: 70%;
+    max-width: 20%;
   }
-
-  .mega-box button {
-    background: #79b927;
-    padding: 5px;
+  .mega-box .prdt-btn {
+    padding: 3px;
   }
 }
 nav input {
@@ -849,7 +843,7 @@ a.nivo-control.active {
 }
 
 /* ========== contact section styles ========== */
-#contact{
+#contact {
   background: #ffffff;
 }
 .contact .info-box {
