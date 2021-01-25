@@ -485,10 +485,10 @@ a.nivo-control.active {
 }
 @media screen and (max-width: 700px) {
   #aboutus .container .header p {
-    font-size: 14px;
+    font-size: 15px;
   }
   #aboutus .container .header h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   #aboutus .container .header h2 span:after {
     height: 3px;
@@ -567,18 +567,18 @@ a.nivo-control.active {
 }
 
 /* services styles */
-#services .text-center h1 {
+#services .text-center h2 {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
-#services .text-center h1 span {
+#services .text-center h2 span {
   color: #79b927;
   position: relative;
 }
 
-#services .text-center h1 span:before {
+#services .text-center h2 span:before {
   content: "";
   position: absolute;
   left: 20%;
@@ -605,10 +605,8 @@ a.nivo-control.active {
   perspective: 1000px;
 }
 #services .box .front-face {
-  /* width: 100%; */
   box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
   transition: all 0.5s ease;
-  /* height: 300px; */
   padding: 20px;
 }
 #services .box:hover .front-face {
@@ -690,22 +688,30 @@ a.nivo-control.active {
     padding: 15px;
   }
 }
+@media screen and (max-width: 700px) {
+  #services .container .text-center h2 {
+    font-size: 20px;
+  }
+  #services .container .text-center h2 span:after {
+    height: 3px;
+  }
+}
 
 /* product styles */
 
 #products-box .title-all {
   margin-bottom: 30px;
 }
-#products-box .title-all h1 {
-  font-size: 30px;
-  font-weight: 700;
+#products-box .title-all h2 {
+  font-size: 26px;
+  font-weight: 600;
   color: #f5f5f5;
 }
-#products-box .title-all h1 span {
+#products-box .title-all h2 span {
   color: #2f552e;
   position: relative;
 }
-#products-box .title-all h1 span:before {
+#products-box .title-all h2 span:before {
   content: "";
   position: absolute;
   left: 20%;
@@ -842,6 +848,14 @@ a.nivo-control.active {
     max-width: 50%;
   }
 }
+@media screen and (max-width: 700px) {
+  #products-box .container .title-all h2 {
+    font-size: 20px;
+  }
+  #products-box .container .title-all h2 span:after {
+    height: 3px;
+  }
+}
 
 /* ========== contact section styles starts ========== */
 /* contact  */
@@ -856,7 +870,6 @@ a.nivo-control.active {
   color: #2f552e;
   font-size: 23px;
   font-weight: bold;
-  letter-spacing: 0.5px;
 }
 #contact .cont-text .cont-btn {
   display: inline-block;
@@ -884,7 +897,6 @@ a.nivo-control.active {
   font-size: 23px;
   font-weight: bold;
   margin-bottom: 5px;
-  letter-spacing: 0.5px;
 }
 
 #contact .container .row .contact-icons {
@@ -1038,6 +1050,13 @@ a.nivo-control.active {
 #footer .footer-foot .container a {
   text-decoration: none;
   color: #bdbdbd;
+}
+
+@media screen and (max-width: 970px) {
+  #footer {
+    text-align: center;
+    font-size: 13px;
+  }
 }
 
 /* ========== footer section style ends ========== */
