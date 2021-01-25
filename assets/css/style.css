@@ -6,8 +6,7 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body {
   background: #f5f5f5;
   color: #444;
   scroll-behavior: smooth;
@@ -52,6 +51,14 @@ section {
   z-index: 9999;
   cursor: pointer;
   transition: opacity 0.2s ease-out;
+}
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
 }
 
 /*  header styles  */
