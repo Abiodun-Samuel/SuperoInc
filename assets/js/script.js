@@ -87,9 +87,4 @@
   });
 })(jQuery);
 
-AOS.init({
-  duration: 500,
-  once: false,
-  // mirror: true,
-  easing: "ease-in-out",
-});
+
