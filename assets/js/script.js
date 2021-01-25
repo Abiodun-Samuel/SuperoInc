@@ -91,5 +91,5 @@ AOS.init({
   duration: 500,
   easing: "ease",
   once: false,
-  mirror: true,
+  mirror: false,
 });
