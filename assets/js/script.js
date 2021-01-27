@@ -88,8 +88,9 @@
   // Init AOS
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: false,
+      mirror: false,
     });
   }
   $(window).on("load", function () {
