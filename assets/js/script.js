@@ -91,6 +91,7 @@
       duration: 500,
       once: false,
       mirror: false,
+      offset: 60,
     });
   }
   $(window).on("load", function () {
